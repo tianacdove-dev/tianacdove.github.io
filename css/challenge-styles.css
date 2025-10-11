@@ -1,0 +1,40 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.nav-list a:link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-list a:visited {
+    color: #a00000;
+}
+.nav-list a:hover {
+    text-decoration: underline;
+}
+.nav-list a:active {
+    color: #0905ff;
+}
+
+h1, h2, h3 {
+    color: #bb1b47;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-color: #bb1b47;
+}
+h1.special.header {
+    font-weight: regular;
+    letter-spacing: .1rem;  
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+.site-intro {
+    font-size: 1.25rem;
+}
