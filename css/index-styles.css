@@ -1,17 +1,18 @@
 html {
-    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #fcf1a6;
+    box-sizing: border-box;
+}
+* ,
+* ::before ,
+* ::after {
+box-sizing: inherit;
 }
 
 .nav-list-index {
     list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
     font-size: large;
-    margin-top: 1rem;
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 4 12l8 10 8-10-8-10Z" fill="%232B7137"></path></svg>');
 }
 .nav-list-index a:link {
     color: #043915;
@@ -34,61 +35,28 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
-    text-shadow: #043915 2px 2px 4px;
 }
-.index-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    height: auto;
-    align-self: center;
-}
-.container {
-  width: 30rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  background-color: rgb(255, 255, 255);
-  border-style: solid;
-  border-color: #043915;
-  box-shadow: #000000 4px 4px 8px;
-  border-radius: 10px;
-  padding-top: .5rem;
-    padding-bottom: .5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
 
-}
-.description {
-    font-size: 1.2rem;
-    color: #000000;
+p {
     text-align: center;
+   
 }
+
 h2 {
     text-align: center;
     font-weight: bold;
-    margin-top: 2rem;
     text-decoration: underline;
     text-decoration-style: wavy;
     text-underline-offset: 0.5rem;
-    color: #faf9cd;
+    color: #05501d;
     
 }
 .assignments {
-    width: 20rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    border-radius: 10px;
-    background-color: #05501d;
     font-size: large;
-    list-style-type: circle;
+    list-style-type: none;
     list-style-position: inside;
-    padding-top: .1rem;
-    padding-bottom: .1rem;
-    
+    list-style-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 23a1 1 0 0 1-.78-.38l-8-10c-.29-.37-.29-.88 0-1.25l8-9.99c.38-.47 1.18-.47 1.56 0l8 10c.29.37.29.88 0 1.25l-8 10a1 1 0 0 1-.78.38ZM5.28 12 12 20.4l6.72-8.4L12 3.6 5.28 12Z" fill="%232B7137"></path></svg>');
+text-align: center;
 }
 
 .assignments a:link {
@@ -108,19 +76,15 @@ h2 {
 }   
 footer {
     text-align: center;
-    margin-top: 4rem;
-    background-color: #95af72;
     color: #000000;
     font-size: small;
-    padding-top: .1rem;
-    padding-bottom: .1rem;
 }
 footer a:link {
     color: #000000;
     text-decoration: none;
 }
 footer a:visited {
-    color: #ffffff;
+    color: #000000;
 }
 footer a:hover {
     text-decoration: underline;
@@ -130,8 +94,6 @@ footer a:active {
 }   
 .top-link {
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
 }
 .top-link a:link {
     color: #043915;
