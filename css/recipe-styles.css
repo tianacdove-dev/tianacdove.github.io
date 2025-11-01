@@ -1,0 +1,148 @@
+/* font-family: "Open Sans", sans-serif;
+    font-family: "Noto Serif", serif;
+  */
+
+html {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.20rem;
+    line-height: 125%;
+    color: rgb(0, 0, 0);
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+nav {
+    background-color: beige;
+    text-alighn: center;
+
+}
+nav li {
+    display: inline;
+}
+nav a {
+    padding: 12px 16px;
+    background-color: #f5f5dc;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+nav a:link {
+    color: brown;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:visited {
+    color: #800000;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav a:active {
+    color: #ff0000;
+}                       
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+h1, 
+h2, 
+h3 {
+    font-family: "Noto Serif", serif;
+}
+h1 {
+    font-size: 3rem;
+    margin: 6% 0;
+    text-align: center;
+    text-shadow: 3px 5px 3px #d8d8d8;
+}
+
+
+img{
+    float: left;
+    max-width: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 3px #d8d8d8;
+    shape-outside: circle(50%);
+}
+
+header h2 {
+    margin: 8% 0;
+}
+.rate {
+    clear:both;
+    margin-top: 6%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.emoji::after {
+    content: "\1f370";
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.details, 
+.ingredients,
+.nutrition,
+.instructions {
+    width: 40%;
+    float: left;
+}
+.details, 
+.instructions {
+    margin-right:16%;
+    margin-left: 2%;
+}
+
+blockquote {
+    clear:both;
+    width: 300%;
+    height: 280px;
+    padding: 78px 16px 0 20px;
+    border-radius: 50%;
+    background-color: beige;
+    outline: dotted 6px beige;
+    outline-offset: 10px;
+    font-family: "open sans", sans-serif;
+    font-size: 1rem;
+    margin: 40px auto;
+}
+
+blockquote small {
+    text-align: right;
+}
+footer {
+    background-color: beige;
+    color:white;
+    padding: 2% 0 ;
+    margin-top: 10px;
+}
+
+footer a {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.col1,
+.col2,
+.col3 {
+   display:block;
+   float:left;
+    width:33%;
+}
