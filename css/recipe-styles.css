@@ -105,12 +105,12 @@ header h2 {
 
 blockquote {
     clear:both;
-    width: 300%;
+    width: 30%;
     height: 280px;
     padding: 78px 16px 0 20px;
     border-radius: 50%;
-    background-color: beige;
-    outline: dotted 6px beige;
+    background-color: rgb(181, 112, 52);
+    outline: dotted 6px rgb(181, 112, 52);
     outline-offset: 10px;
     font-family: "open sans", sans-serif;
     font-size: 1rem;
