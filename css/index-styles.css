@@ -14,7 +14,9 @@ box-sizing: inherit;
     font-size: large;
     list-style-position: inside;
     list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 4 12l8 10 8-10-8-10Z" fill="%232B7137"></path></svg>');
-    text-align: center;
+    text-align: left;
+    position: absolute;
+    right: 100;
 }
 .nav-list-index a:link {
     color: #043915;
@@ -37,6 +39,20 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
+    animation-name: pulse;
+    animation-duration: 2s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.8);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 p {
@@ -111,3 +127,17 @@ footer a:active {
 .top-link a:active {
     color: #000000;
 }
+
+.index-image {
+    position: relative;
+    left: 400px;
+    animation: 3s linear 0s slide-in;
+}
+@keyframes slide-in {
+    0% {
+        transform: translateX(100rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}   
