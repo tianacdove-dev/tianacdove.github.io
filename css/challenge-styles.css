@@ -27,8 +27,8 @@ box-sizing: inherit;
 h1, h2, h3 {
     color: #bb1b47;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    text-color: #bb1b47;
 }
+
 h1.special.header {
     font-weight: regular;
     letter-spacing: .1rem;  
