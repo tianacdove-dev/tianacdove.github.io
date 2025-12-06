@@ -1,7 +1,25 @@
+:root { 
+    --font-size: 1vw;
+    --color-white: rgb(255, 255, 255);
+    --color-red: #a00000;  
+    --color-black: linear-gradient(top red, bottom black);
+}
+
+
+
+
+
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5;
     box-sizing: border-box;
+    background-image: linear-gradient(black, rgb(255, 255, 255));
+    font-size:calc(var(--font-size) + 14);
+    --ratio: 5;
+    --size-one: calc(var(--size-one) * var(--ratio));
+    --size-two: calc(var(--size-two) * var(--ratio));
+
+
 }
 * ,
 * ::before ,
@@ -9,24 +27,46 @@ html {
 box-sizing: inherit;
 }
 
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 10rem;
+    padding-left: 10rem;
+    
+    
+}
 .nav-list a:link {
-    color: #000000;
+    color: var(--color-white);
     text-decoration: none;
     font-weight: bold;
 }
 .nav-list a:visited {
     color: #a00000;
 }
+
 .nav-list a:hover {
     text-decoration: underline;
 }
-.nav-list a:active {
-    color: #0905ff;
+
+h1 {
+    background-image: linear-gradient(top red, bottom black);
+    background-clip: text;  
+    color: transparent;
 }
 
 h1, h2, h3 {
-    color: #bb1b47;
+    text-align: center; 
+    color: var(--color-red);
     font-family:Georgia, 'Times New Roman', Times, serif;
+    
+    
+}
+
+h2, h3 {
+    font-size: 30px;
+
 }
 
 h1.special.header {
@@ -34,13 +74,58 @@ h1.special.header {
     letter-spacing: .1rem;  
     text-transform: uppercase;
     font-size: 3.5rem;
+   
 }
+
 h2 {
-    font-size: 2rem;
+    background-color: var(--color-black);
 }
-h3 {
-    font-size: 1.5rem;
-}
-.site-intro {
-    font-size: 1.25rem;
-}
+
+
+
+        body {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            width: calc(80%-40px);
+        }
+        .signif-design {
+            list-style-position: inside;
+        }
+
+        .typefaces {
+            list-style-position:inside;
+        }
+
+        .site-intro {
+            font-size: 1.25rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+           
+        }
+        footer {
+            color: var(--color-red);
+        }
+      
+
+/* media */
+
+@media (max-width: 600px) {
+        html{
+            --ratio: 1.6;
+        }        
+        
+        h1 {
+            font-size: var(--size-one)
+        }
+
+        h2 {
+             font-size: var(--size-two);
+             }
+        h3 {
+        font-size: var(--size-two);
+            }       
+        }
+        
+
+
